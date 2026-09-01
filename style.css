@@ -4,6 +4,7 @@ main {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
+  overflow-y: hidden;
   height: 100vh;
 }
 
@@ -20,4 +21,31 @@ main > .container {
   padding: 1rem;
   border-radius: 1rem;
   border: 1px solid black;
+  overflow: hidden;
+}
+
+.parallax-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-item {
+  position: absolute;
+  will-change: transform;
+}
+
+.text-bg {
+  font-size: 8rem;
+  color: rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  white-space: nowrap;
+}
+
+.text-fg {
+  font-size: 4rem;
+  color: black;
+  z-index: 2;
+  white-space: nowrap;
 }
