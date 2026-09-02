@@ -8,12 +8,13 @@ mainContainer.addEventListener('wheel', (event) => {
 
 const updateParallax = () => {
   const scrollLeft = mainContainer.scrollLeft;
+  const viewportCenter = scrollLeft + mainContainer.clientWidth / 2;
   const parallaxLayers = document.querySelectorAll('[data-parallax-speed], [data-x], [data-y]');
   
   parallaxLayers.forEach((layer) => {
      const section = layer.closest('.container');
-     const sectionLeft = section.offsetLeft;
-     const relativeScroll = scrollLeft - sectionLeft;
+     const sectionCenter = section.offsetLeft + (section.offsetWidth / 2);
+     const relativeScroll = viewportCenter - sectionCenter;
      const speed = parseFloat(layer.getAttribute('data-parallax-speed')) || 0;
      
      // 50 is center, 0 is edge, 100 is opposite edge
