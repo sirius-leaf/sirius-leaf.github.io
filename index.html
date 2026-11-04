@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Sirius Leaf</title>
-    
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <title>Sirius Leaf</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main>
     <div class="container">
-      <section>
-        <h1>Hello World!</h1>
-      </section>
+    	<div id="root-scene">
+    		<div class="parallax-item" data-depth="0.1">
+    		    <div class="flex-container">
+        		    <div class="hello">Hello World!</div>
+    			</div>
+    		</div>
+    		<div class="parallax-item" data-depth="0.075" style="opacity: 0.75;">
+    		    <div class="flex-container">
+        		    <div class="hello">Hello World!</div>
+    			</div>
+    		</div>
+    		<div class="parallax-item" data-depth="0.05"  style="opacity: 0.5;">
+    		    <div class="flex-container">
+        		    <div class="hello">Hello World!</div>
+    			</div>
+    		</div>
+    		<div class="parallax-item" data-depth="0.025" style="opacity: 0.25;">
+    		    <div class="flex-container">
+        		    <div class="hello">Hello World!</div>
+    			</div>
+    		</div>
+    	</div>
     </div>
 
-    <div class="container">
-      <section>
-        <h1>Hello World!</h1>
-      </section>
-    </div>
-  </main>
-  
-  <script src="main.js"></script>
+	<!-- Uses Parallax.js (MIT License): https://github.com/wagerfield/parallax -->
+    <script src="parallax-js/parallax.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
