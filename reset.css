@@ -1,3 +1,5 @@
+/* Dipakai untuk membuang hampir semua style bawaan elemen */
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -35,18 +37,4 @@ input, button, textarea, select {
 
 h1, h2, h3, h4, h5, h6, b, strong {
   font-size: inherit;
-  /*font-weight: inherit;*/
 }
-
-/*ol, ul, menu {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
-}*/

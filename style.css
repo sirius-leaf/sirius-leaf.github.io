@@ -60,6 +60,7 @@ body {
 }
 
 .bar {
+    container-type: size;
     position: absolute;
     top: 0;
     left: 0;
@@ -68,13 +69,14 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 100%;
-    z-index: 100;
 }
 
 .bar > div {
     container-type: size;
     height: 25%;
     background-color: white;
+    outline: 0.5cqh solid white;
+    outline-offset: 1cqh;
 }
 
 .title {
@@ -86,4 +88,20 @@ body {
         'CTRS' 80;
     font-size: 30cqh;
     margin-left: 2%;
+}
+
+.corner-grid {
+    container-type: size;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 50%;
+    width: 100%;
+    height: 100%;
+}
+
+.corner-grid > div {
+    height: 30%;
+    aspect-ratio: 1;
+    margin: 1%;
+    border-width: 0.2cqh;
 }
