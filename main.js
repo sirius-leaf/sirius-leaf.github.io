@@ -1,2 +1,2 @@
-var rootScene = document.getElementById('root-scene');
-var rootParallaxInstance = new Parallax(rootScene);
+var scene = document.getElementById('scene');
+var parallaxInstance = new Parallax(scene, {selector: ".parallax-item"});
